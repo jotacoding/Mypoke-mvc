@@ -13,10 +13,12 @@ app.use(express.static(path.join(__dirname, "public")))
 app.use(express.urlencoded ())
 
 
-const port = 3001
-app.listen(port, () => { // listen é uma função do express para criar servidor
-    console.log(`Rondando na porta ${port}`)
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => // listen é uma função do express para criar servidor
+{    console.log(`Rondando na porta ${PORT}`)
 })
+
+
 
 const pokedex = [ // banco de dados fake
 {   
@@ -128,4 +130,3 @@ app.get("/alldetails", (req, res) => { // get é um método HTTP/HTTPS que serve
 
 
 
-let message = "";

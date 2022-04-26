@@ -1,3 +1,9 @@
+function popup(){
+	document.getElementById('p').style.display = 'flex';
+}
+
+
+
 //Button
 function rmb(id){
 
@@ -65,5 +71,5 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init();
-
+  
  

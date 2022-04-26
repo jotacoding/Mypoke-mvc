@@ -56,27 +56,8 @@
             <button id="btnCadastrar" type="submit">Create </button>
 
 
-            <div class="alert hide">
-                <span class="fas fa-check-circle"></span>
-                <span class="msg">Successful! Pokémon was created. </span>
-                <div class="close-btn">
-                   <span class="fas fa-times"></span>
-                </div>
-             </div>
-             <script>
-                $('button').click(function(){
-                  $('.alert').addClass("show");
-                  $('.alert').removeClass("hide");
-                  $('.alert').addClass("showAlert");
-                  setTimeout(function(){
-                    $('.alert').removeClass("show");
-                    $('.alert').addClass("hide");
-                  },5000);
-                });
-                $('.close-btn').click(function(){
-                  $('.alert').removeClass("show");
-                  $('.alert').addClass("hide");
-                });
+
+            
              </script>
             
 

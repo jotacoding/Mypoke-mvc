@@ -14,9 +14,9 @@
     
 
     <body>
-    
+        <header>
         <%- include('./partials/header.ejs') %>
-     
+     </header>
 <main>
 
     <section id="alldets">
@@ -27,7 +27,7 @@
             <div class="alldet">
                 <img src="<%= pokemon.img %>" alt="">
                 <h2><%= pokemon.name %></h2>
-                <p class="dett">Evolutions: <%= pokemon.details %></p>
+                <p>Evolutions: <%= pokemon.details %></p>
             </div>
         <script src="/script.js">
         </script>
