@@ -1,0 +1,22 @@
+{
+  "name": "projeto-2-html",
+  "version": "1.0.0",
+  "description": "Projeto MVC de uma Pokedex",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -e js,html,css,ejs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/jotacoding/Mypoke-mvc.git)"
+  },
+  "author": "João Victor Cavalcante",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.7",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}

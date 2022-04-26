@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/img/pokeball.png">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+
+    <title>Create</title>
+</head>
+<body>
+    
+    <header>
+        <%- include('./partials/header.ejs') %>
+    </header>
+   
+    
+    <section id="cadastro">
+        <h2>Create your Pokemon!</h2>
+    
+        <form action="/create" method="POST">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required> 
+        
+            <label for="desc">Description:</label>
+            <input type="text" id="desc" name="desc"required>
+
+            <label for="height">Height:</label>
+            <input type="text" id="height" name="height"required>
+
+            <label for="weight">Weight:</label>
+            <input type="text" id="weight" name="weight"required>
+
+            <label for="type">Type:</label>
+            <input type="text" id="type" name="type"required>
+
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category"required>
+
+            <label for="abilities">Abilities:</label>
+            <input type="text" id="abilities" name="abilities"required>
+
+            <label for="img">Image Link:</label>
+            <input type="text" id="img" name="img"required>
+
+            <label for="details">Details (Evolutions): </label>
+            <input type="text" id="details" name="details"required>
+
+            <button id="btnCadastrar" type="submit">Create </button>
+
+
+            <div class="alert hide">
+                <span class="fas fa-check-circle"></span>
+                <span class="msg">Successful! Pokémon was created. </span>
+                <div class="close-btn">
+                   <span class="fas fa-times"></span>
+                </div>
+             </div>
+             <script>
+                $('button').click(function(){
+                  $('.alert').addClass("show");
+                  $('.alert').removeClass("hide");
+                  $('.alert').addClass("showAlert");
+                  setTimeout(function(){
+                    $('.alert').removeClass("show");
+                    $('.alert').addClass("hide");
+                  },5000);
+                });
+                $('.close-btn').click(function(){
+                  $('.alert').removeClass("show");
+                  $('.alert').addClass("hide");
+                });
+             </script>
+            
+
+        </form>    
+    
+    </section>
+
+    <footer>
+
+        <%- include('./partials/footer.ejs') %>
+        
+        </footer>
+
+</body>
+</html>
