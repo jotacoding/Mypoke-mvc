@@ -25,6 +25,7 @@
             
         
         <div class="card">
+            
             <img src="<%= pokemon.img %>" alt="">
             <h2><%= pokemon.name %></h2>
             <p class="desc">
@@ -37,7 +38,7 @@
             <p>Abilities: <%= pokemon.abilities %></p></span>
             <button  class='readmorebtn' id='b<%= pokemon.id%>' onclick='rmb(id)'>Show Info</button>
             <button class="detalhes" onclick="window.location.href='/details/<%= pokemon.id %>'">Details</button>
-            <button class="update" onclick="window.location.href='/update/<%= pokemon.id %>' ">Edit</button>
+            <!---<button class="update" onclick="window.location.href='/update/<%= pokemon.id %>' ">Edit</button> --->
         </div>
      <% }) %> 
     <script src="/script.js">

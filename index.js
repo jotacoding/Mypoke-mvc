@@ -1,3 +1,5 @@
+import dotenv from 'dotenv';
+dotenv.config();
 import express from 'express' // importando o express
 import path from 'path' // servir para defirnir caminhos padrões
 
@@ -119,7 +121,7 @@ app.get("/update/:id", (req, res) => {
     // newPokemon.id = id + 1
     // pokedex[id] = newPokemon;
     // pokemon = undefined; 
-    
+
 
     res.render("create", {pokemon, pokedex});
 });

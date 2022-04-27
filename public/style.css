@@ -51,13 +51,14 @@ section#cards div.card{
     box-shadow: 10px 5px 5px 5px #00000015;
     padding: 1rem;
     margin-top: 5rem;
+    
 }
 
 section#cards div.card img{
 
     height: 10rem;
     width: 10rem;
-
+    margin-left: 5rem;
 
 }
 
@@ -94,6 +95,13 @@ section#cards div.card p{
         margin-bottom: 0;
     }
 
+    section#cards div.card img{
+
+        height: 15rem;
+        width: 15rem;
+        margin: 3rem;
+    
+    }
     
 }
 
@@ -210,6 +218,11 @@ section#cadastro form button:hover{
     color: whitesmoke;
 }    
 
+.ipoke{
+    height: 15rem;
+    width: 15rem;
+
+   }
 
 @media screen and (max-width: 650px) {
     section#cadastro form button{
@@ -224,7 +237,11 @@ section#cadastro form button:hover{
     
     }
 
-   
+   .ipoke{
+    height: 10rem;
+    width: 10rem;
+
+   }
     
 }
 
@@ -286,6 +303,20 @@ ul {
     color: #fff;
   }
   
+  nav.lgpoke {
+    padding: 0rem;
+    
+    }
+    nav.lgpoke img {
+      width: 4rem;
+    }
+    nav.lgpoke ul.ulpoke {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    }
+
+
   @media (max-width: 600px) {
     #menu {
       display: block;
@@ -459,13 +490,14 @@ section#carDs div.cardD{
     box-shadow: 10px 5px 5px 5px #00000015;
     padding: 1rem;
     margin-top: 5rem;
+    
 }
 
 section.secDetalhes div.cardD img{
-    padding-left: 10rem;
+    padding-left: 7rem;
     height: 20rem;
     width: 20rem;
-
+    
 }
 
 section#carDs div.cardD h2{
@@ -528,13 +560,14 @@ section#alldets div.alldet{
     box-shadow: 10px 5px 5px 5px #00000015;
     padding: 1rem;
     margin-top: 5rem;
+    
 }
 
 section#alldets div.alldet img{
 
     height: 10rem;
     width: 10rem;
-
+    margin-left: 4rem;
 
 }
 
@@ -566,6 +599,13 @@ section#alldets div.alldet p{
         margin-bottom: 0;
     }
 
+    section#alldets div.alldet img{
+
+        height: 10rem;
+        width: 10rem;
+        margin-left: 2rem;
+    
+    }
     
 }
 
@@ -590,7 +630,6 @@ section#alldets div.alldet p{
     background-color: rgb(61, 61, 61) ;
     color: whitesmoke;
 }    
-
 
 
 
