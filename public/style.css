@@ -286,7 +286,20 @@ ul {
     color: #fff;
   }
   
-  @media (max-width: 600px) {
+  nav.lgpoke {
+padding: 0rem;
+
+}
+nav.lgpoke img {
+  width: 3rem;
+}
+nav.lgpoke ul.ulpoke {
+list-style: none;
+display: flex;
+align-items: center;
+}
+
+@media (max-width: 600px) {
     #menu {
       display: block;
       position: absolute;
