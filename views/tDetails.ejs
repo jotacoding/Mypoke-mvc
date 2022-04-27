@@ -17,24 +17,28 @@
         <header>
         <%- include('./partials/header.ejs') %>
      </header>
-<main>
-
-    <section id="alldets">
+<main class="mainAcards">
+    <section class="secAcard">
+        <section id="alldets">
     
         <% pokedex.forEach((pokemon) => { %>
                 
             
             <div class="alldet">
-                <img src="<%= pokemon.img %>" alt="">
-                <h2><%= pokemon.name %></h2>
-                <p>Evolutions: <%= pokemon.details %></p>
+                <img src="<%= pokemon.imgD %>" alt="">
+                <h2><%= pokemon.maxEvol %></h2>
+                <p>Evolutions: <br><% pokemon.details.split('||').forEach((det) =>{ %>
+                 <span><%= det %> </span> <br>    
+                <% }) %>
+                </p>
+
             </div>
         <script src="/script.js">
         </script>
         
             <% }) %>    
         </section>    
-
+    </section>
 
 
 

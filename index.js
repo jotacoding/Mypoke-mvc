@@ -31,7 +31,9 @@ const pokedex = [ // banco de dados fake
     desc: 'That can generate powerful electricity have cheek sacs that are extra soft and super stretchy.',
     abilities: 'Static',
     type:'Eletric',
-    details:'Basic stage: Pichu || Intermediate stage: Pikachu || Final stage: Raichu'
+    details:'Basic stage: Pichu || Intermediate stage: Pikachu || Final stage: Raichu',
+    imgD:'/img/raichu.gif',
+    maxEvol:'Raichu'
 },
 {   
     id: 2,
@@ -43,7 +45,9 @@ const pokedex = [ // banco de dados fake
     desc: 'There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.',
     abilities: 'Overgrow',
     type:'Grass and Poison',
-    details:'Basic stage: Bulbasaur || Intermediate stage: Ivysaurus || Final stage: Venusaur'
+    details:'Basic stage: Bulbasaur || Intermediate stage: Ivysaurus || Final stage: Venusaur',
+    imgD:'/img/venusaur.gif',
+    maxEvol:'Venusaur'
 },
 {
     id: 3,
@@ -55,7 +59,9 @@ const pokedex = [ // banco de dados fake
     desc: 'It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.',
     abilities: 'Blaze',
     type:'Fire',
-    details:'Basic stage: Charmander || Intermediate stage: Charmeleon || Final stage: Charizard'
+    details:'Basic stage: Charmander || Intermediate stage: Charmeleon || Final stage: Charizard',
+    imgD:'/img/charizard.gif',
+    maxEvol:'Charizard'
 },
 
 {
@@ -68,9 +74,9 @@ const pokedex = [ // banco de dados fake
     desc: 'It loves to collect shiny things. He it might even let its Trainer have a look at its hoard of treasures.',
     abilities: 'Pickup',
     type:'Normal',
-    details:'Basic stage: Meowth || Final stage: Persian'
-    
-
+    details:'Basic stage: Meowth  || Final stage: Persian',
+    imgD:'/img/persian.gif',
+    maxEvol:'Persian'
 },
 
 ]
@@ -99,8 +105,9 @@ app.post("/create", (req,res) =>{
 
     
     
-    setTimeout(() => {res.redirect("/");},5000);
+    res.redirect("/");
 })
+
 
 app.get("/update/:id", (req, res) => {
 

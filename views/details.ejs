@@ -15,21 +15,21 @@
         <header>
         <%- include('./partials/header.ejs') %>
     </header>
-<main>
+<main class="mainDetalhes">
 
+    <section class="secDetalhes">
     <section id="cardDs">
         <div class="cardD">
     
-    <img src="<%= pokemon.img %>" alt="">
-    <h2><%= pokemon.name %></h2>
+    <img src="<%= pokemon.imgD %>" alt="">
+    <h2><%= pokemon.maxEvol %></h2>
    
-    <p>Evolutions: <%= pokemon.details %></p>
+    <p class="evol">Evolutions: <%= pokemon.details %></p>
      
 </div>
 
-
-
-
+</section>
+</section>
 
 <script src="/script.js">
 </script>

@@ -6,11 +6,7 @@
     font-family: Roboto, arial;
 }
 
-header{
-    
-    padding: 3rem;
-    background-color: red;
-}
+
 
 
 header h1 {
@@ -21,24 +17,32 @@ header h1 {
 }
 
 main{
-
+    
     margin: 0 10rem 0 10rem;
 
 }
 
-section#cards{
 
+/*C A R D S*/
+main.mainCards {
+    
+}
+
+
+section#cards{
+    
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 5rem;
     column-gap: 2rem;
     margin-block-end: 5rem;
-
+    
 }
 
 section#cards div.card{
-   
+    background-color: #fcfcfc;
+    border-radius: 20px;
     width: 20rem;
     box-shadow: 10px 5px 5px 5px #00000015;
     padding: 1rem;
@@ -47,8 +51,8 @@ section#cards div.card{
 
 section#cards div.card img{
 
-    height: 20vh;
-    width: 10vw;
+    height: 10rem;
+    width: 10rem;
 
 
 }
@@ -70,6 +74,31 @@ section#cards div.card p{
 
 }
 
+
+
+@media screen and (max-width: 600px) {
+    main.mainCards {
+        flex-direction: column;
+    }
+
+    main.mainCards section.secCard {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.mainCards section.secCard:last-child {
+        margin-bottom: 0;
+    }
+
+    
+}
+
+
+
+
+
+/*B O T A O  S H O W  I N F O*/
+
 .moreText {
 
 display: none;
@@ -77,7 +106,7 @@ flex-direction: column;
 }
 
 .readmorebtn {
-    
+    width: 7rem;
     margin: 0 auto;
     font-size: 1rem;
     background-color: red;
@@ -86,7 +115,7 @@ flex-direction: column;
     cursor: pointer;
     transition: all .2s ease-in-out;
     margin-bottom: 2rem;
-    
+    border-radius: 30px 10px;
 }
 .readmorebtn:hover{
 
@@ -95,6 +124,8 @@ flex-direction: column;
 }    
 
 
+
+/*C A D A S T R O*/
 
 section#cadastro {
 
@@ -119,7 +150,7 @@ section#cadastro form{
 }
 
 section#cadastro form input{
-
+    border-radius: 20px;
     width: 100%;
     padding: .7rem;
     font-size: 1rem;
@@ -147,6 +178,7 @@ section#cadastro form button{
     color: #fff;
     cursor: pointer;
     transition: all .2s ease-in-out;
+    border-radius: 20px;
 }
 
 section#cadastro form button:hover{
@@ -155,13 +187,163 @@ section#cadastro form button:hover{
     color: whitesmoke;
 }    
 
+
+@media screen and (max-width: 650px) {
+    section#cadastro form button{
+        width: 4.3rem;
+        justify-content: center;
+        
+    }
+
+    section#cadastro form{
+
+        width: 40rem;
+    
+    }
+
+   
+    
+}
+
+
+
+/*M E N U*/
+
+header {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  
+  a:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+  
+  #logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff
+  }
+  
+  #header {
+    box-sizing: border-box;
+    height: 95px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #E20005;
+  }
+  
+  #menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+  }
+  
+  #menu a {
+    display: block;
+    padding: 0.5rem;
+    color: #fff;
+  }
+  
+  #btn-mobile {
+    display: none;
+    color: #fff;
+  }
+  
+  @media (max-width: 600px) {
+    #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: #af0004;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+      
+    }
+    #nav.active #menu {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+    #menu a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid ;
+    }
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+    }
+    #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+      color: #fff;
+    }
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    
+    }
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+/*F O O T E R*/
+
 footer {
 
 background-color: #111;
 height: auto;
 width: 100vw;
 font-family: "Open Sans";
-padding-top: 40px;
+padding-top: 20px;
 color: #fff;
 }
 
@@ -175,9 +357,9 @@ color: #fff;
 }
 
 .footer-content h3{
-
+    
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 100px;
     line-height: 3rem;
      
 }    
@@ -228,7 +410,7 @@ color: #fff;
 
 
 
-
+/*CARD DETALHES*/
 
 main{
 
@@ -248,17 +430,18 @@ section#cardDs{
 }
 
 section#carDs div.cardD{
-
+    background-color: #fcfcfc;
+    border-radius: 20px;
     width: 20rem;
     box-shadow: 10px 5px 5px 5px #00000015;
     padding: 1rem;
     margin-top: 5rem;
 }
 
-section#carDs div.cardD img{
-
-    height: 20vh;
-    width: 10vw;
+section.secDetalhes div.cardD img{
+    padding-left: 10rem;
+    height: 20rem;
+    width: 20rem;
 
 }
 
@@ -279,11 +462,30 @@ section#carDs div.cardD p{
 
 }
 
+@media screen and (max-width: 600px) {
+    
+    main.mainDetalhes section.secDetalhes {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    section.secDetalhes div.cardD img{
+        padding: 0rem;
+        height: 10rem;
+        width: 10rem;
+    
+    }
+    
+    
+}
 
 
 
 
 
+
+
+/*ALL DET*/
 
 section#alldets{
 
@@ -297,7 +499,8 @@ section#alldets{
 }
 
 section#alldets div.alldet{
-
+    background-color: #fcfcfc;
+    border-radius: 20px;
     width: 20rem;
     box-shadow: 10px 5px 5px 5px #00000015;
     padding: 1rem;
@@ -306,8 +509,9 @@ section#alldets div.alldet{
 
 section#alldets div.alldet img{
 
-    height: 20vh;
-    width: 10vw;
+    height: 10rem;
+    width: 10rem;
+
 
 }
 
@@ -325,13 +529,29 @@ section#alldets div.alldet p{
 
 
 
+@media screen and (max-width: 600px) {
+    main.mainAcards {
+        flex-direction: column;
+    }
+
+    main.mainAcards section.secAcard {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.mainAcards section.secAcard:last-child {
+        margin-bottom: 0;
+    }
+
+    
+}
 
 
 
-
+/*BOTÃO DETAILS*/
 
 .detalhes {
-    
+    width: 7rem;
     margin: 0 auto;
     font-size: 1rem;
     background-color: gray;
@@ -340,7 +560,7 @@ section#alldets div.alldet p{
     cursor: pointer;
     transition: all .2s ease-in-out;
     margin-bottom: 2rem;
-    
+    border-radius: 30px 10px;
 }
 .detalhes:hover{
 
@@ -353,60 +573,8 @@ section#alldets div.alldet p{
 
 
 
-
-
-  
-a {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  
-  a:hover {
-    opacity: 0.7;
-  }
-  
-  .logo {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    z-index: 1;
-    height: 8vh;
-  }
-  
- 
-  
-  .nav-list {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-list li {
-    letter-spacing: 3px;
-    margin-left: 32px;
-  }
-  
-  .mobile-menu {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-  }
  
 
 
 
- 
+

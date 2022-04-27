@@ -17,10 +17,10 @@
    
    
     
-   <main>
-    
+   <main class="mainCards">
+    <section class="secCard">
     <section id="cards">
-    
+        
     <% pokedex.forEach((pokemon) => { %>
             
         
@@ -37,13 +37,15 @@
             <p>Abilities: <%= pokemon.abilities %></p></span>
             <button  class='readmorebtn' id='b<%= pokemon.id%>' onclick='rmb(id)'>Show Info</button>
             <button class="detalhes" onclick="window.location.href='/details/<%= pokemon.id %>'">Details</button>
+            <a></a>
         </div>
      <% }) %> 
     <script src="/script.js">
 
+
     </script>
     
-         
+        </section>
     </section>    
 
     
