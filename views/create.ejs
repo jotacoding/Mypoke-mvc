@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" 
     href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
@@ -25,6 +25,7 @@
    
     
     <section id="cadastro">
+        <% if (pokemon == undefined) { %>
         <h2>Create your Pokemon!</h2>
     
         <form action="/create" method="POST">
@@ -65,6 +66,56 @@
             <button id="btnCadastrar" type="submit">Create </button>
 
 
+            <% } %>
+            
+             
+        </div>
+     </div>
+
+        </form>    
+    
+
+        <% if (pokemon != undefined) { %>
+            
+            <h2>Edit a Pokemon!</h2>
+            <form action="/create" method="POST">
+                
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="<%= pokemon.name %>" required> 
+                
+            <label for="desc">Description:</label>
+            <input type="text" id="desc" name="desc" value="<%= pokemon.desc %>" required>
+                
+            <label for="height">Height:</label>
+            <input type="text" id="height" name="height" value="<%= pokemon.height %>" required>
+                   
+            <label for="weight">Weight:</label>
+            <input type="text" id="weight" name="weight" value="<%= pokemon.weight %>" required>
+                 
+            <label for="type">Type:</label>
+            <input type="text" id="type" name="type" value="<%= pokemon.type %>" required>
+                
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" value="<%= pokemon.category %>" required>
+                <div class="abilities">
+            <label for="abilities">Abilities:</label>
+            <input type="text" id="abilities" name="abilities" value="<%= pokemon.abilities %>" required>
+                
+            <label for="img">Image Link:</label>
+            <input type="text" id="img" name="img" value="<%= pokemon.img %>" required>
+                
+            <label for="details">Evolutions: </label>
+            <input type="text" id="details" name="details" value="<%= pokemon.details %>" required>
+            
+            <label for="imgD">Image: (Maximum evolution) </label>
+            <input type="text" id="imgD" name="imgD" value="<%= pokemon.imgD %>" required>
+            
+            <label for="maxEvol">Name Maximum Evolution: (Ex:Charizard) </label>
+            <input type="text" id="maxEvol" name="maxEvol" value="<%= pokemon.maxEvol %>" required>
+
+            <button id="btnCadastrar" type="submit">Edit </button>
+
+
         
             
              
@@ -74,7 +125,8 @@
 
 
         </form>    
-    
+        <% } %>
+
     </section>
 
     <footer>

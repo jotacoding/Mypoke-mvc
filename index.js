@@ -81,9 +81,10 @@ const pokedex = [ // banco de dados fake
 
 ]
  
+let pokemon = undefined;
 
 app.get('/create', (req, res) =>{
-    res.render ('create');
+    res.render ('create', {pokemon});
     
 });
 
@@ -91,13 +92,13 @@ app.get('/create', (req, res) =>{
     
 
 
-app.get("/", (req, res) => { // get é um método HTTP/HTTPS que serve para trazer uma pagina
+app.get("/", (req, res) => { 
     res.render ('index', {pokedex});
 })
 
 
 app.post("/create", (req,res) =>{
-    const pokemon = req.body
+    pokemon = req.body
     
     pokemon.id = pokedex.length + 1;
     
@@ -112,9 +113,15 @@ app.post("/create", (req,res) =>{
 app.get("/update/:id", (req, res) => {
 
     const id = +req.params.id;
-    const pokemon = pokedex.find(pokemon => pokemon.id === id)
+    pokemon = pokedex.find(pokemon => pokemon.id === id)
+    // const newPokemon = req.body;
 
-    res.send(pokemon)
+    // newPokemon.id = id + 1
+    // pokedex[id] = newPokemon;
+    // pokemon = undefined; 
+    
+
+    res.render("create", {pokemon, pokedex});
 });
 
 
@@ -123,7 +130,7 @@ app.get("/update/:id", (req, res) => {
 app.get('/details/:id', (req,res) => {
 
     let id = +req.params.id;
-    const pokemon = pokedex.find(pokedex => pokedex.id === id)
+    pokemon = pokedex.find(pokedex => pokedex.id === id)
     res.render ('details', {pokemon});
 
 
