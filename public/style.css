@@ -22,8 +22,7 @@ header h1 {
 }
 
 main{
-            height: 10%;
-            width: 100%;   
+            
     margin: 0 10rem 0 10rem;
 
 }
@@ -394,8 +393,8 @@ ul {
 footer {  
  
 background-color: #111;
-height: 10%;
-width: 100%;
+height: auto;
+width: 100vw;
 font-family: "Open Sans";
 padding-top: 20px;
 color: #fff;
