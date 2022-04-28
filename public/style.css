@@ -392,7 +392,10 @@ ul {
 /*F O O T E R*/
 
 footer {
-
+position: absolute;
+bottom: 0;
+left: 0;
+right 0;    
 background-color: #111;
 height: auto;
 width: 100vw;
@@ -402,7 +405,7 @@ color: #fff;
 }
 
 .footer-content {
-    height: auto;
+    
     display: flex;
     align-items: center;
     justify-content: center;
