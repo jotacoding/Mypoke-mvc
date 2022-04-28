@@ -7,12 +7,18 @@
 }
 
 body{
-    height: 100vh;
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(227, 227, 227);
-            
+    justify-content: space-between;
+    height: 100vh;
 }
 
+header{
+    width: 100%;
+
+}
 
 header h1 {
     
@@ -22,18 +28,13 @@ header h1 {
 }
 
 main{
-            
+    
     margin: 0 10rem 0 10rem;
-
-}
-
-
-/*C A R D S*/
-main.mainCards {
     
 }
 
 
+/*C A R D S*/
 section#cards{
     
     display: flex;
@@ -52,7 +53,7 @@ section#cards div.card{
     box-shadow: 10px 5px 5px 5px #00000015;
     padding: 1rem;
     margin-top: 5rem;
-    
+    height: 352px;
 }
 
 section#cards div.card img{
@@ -105,6 +106,8 @@ section#cards div.card p{
     }
     
 }
+
+
 
 
 
@@ -390,8 +393,9 @@ ul {
 
 /*F O O T E R*/
 
-footer {  
- 
+footer {
+
+bottom: 0;
 background-color: #111;
 height: auto;
 width: 100vw;
@@ -401,7 +405,7 @@ color: #fff;
 }
 
 .footer-content {
-    background-color: #111;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -426,23 +430,13 @@ color: #fff;
 
 }
 
-.footer-bottom p{
-    font-size: 14px;
-    word-spacing: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
 .socials{
 
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 3rem 0;
+    margin: 1rem 0 1rem 0;
 
 }
 
@@ -470,7 +464,6 @@ color: #fff;
     color: red;
     
 }
-
 
 
 
@@ -525,6 +518,13 @@ section#carDs div.cardD p.desc{
 section#carDs div.cardD p{
     margin-bottom: 0.3rem;
 
+}
+
+.evol:first-letter {
+    text-transform: uppercase;
+}
+.alldet:first-letter {
+    text-transform: uppercase;
 }
 
 @media screen and (max-width: 600px) {
@@ -640,13 +640,3 @@ section#alldets div.alldet p{
     background-color: rgb(61, 61, 61) ;
     color: whitesmoke;
 }    
-
-
-
-
-
- 
-
-
-
-
