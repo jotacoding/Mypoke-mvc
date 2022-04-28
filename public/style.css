@@ -30,7 +30,7 @@ main{
 
 /*C A R D S*/
 main.mainCards {
-    
+    margin-bottom: 3rem;
 }
 
 
@@ -391,7 +391,7 @@ ul {
 /*F O O T E R*/
 
 footer {  
-position: relative;   
+position: absolute; 
 background-color: #111;
 height: auto;
 width: 100vw;
