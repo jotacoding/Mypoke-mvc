@@ -430,6 +430,11 @@ color: #fff;
 
 }
 
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+}
+
 .socials{
 
     list-style: none;
@@ -466,6 +471,16 @@ color: #fff;
 }
 
 
+@media screen and (min-width: 600px) {
+    
+position: absolute;
+bottom: 0;
+left: 0;
+right 0;    
+height: auto;
+width: 100vw;
+    
+}
 
 /*CARD DETALHES*/
 
