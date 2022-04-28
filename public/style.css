@@ -433,6 +433,11 @@ color: #fff;
 .footer-bottom p{
     font-size: 14px;
     word-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .socials{
@@ -473,7 +478,7 @@ color: #fff;
 
 @media screen and (min-width: 600px) {
     
-position: absolute;
+
 bottom: 0;
 left: 0;
 right 0;    
