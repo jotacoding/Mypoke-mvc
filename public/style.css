@@ -106,9 +106,31 @@ section#cards div.card p{
     
 }
 
+@media screen and (max-width: 992px) {
 
 
+main.mainCards {
+        flex-direction: column;
+    }
 
+    main.mainCards section.secCard {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.mainCards section.secCard:last-child {
+        margin-bottom: 0;
+    }
+
+    section#cards div.card img{
+
+        height: 20rem;
+        width: 20rem;
+        margin: 3rem;
+    
+    }
+    
+}
 
 /*B O T A O  S H O W  I N F O*/
 
