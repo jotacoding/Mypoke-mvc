@@ -10,7 +10,7 @@ body{
     height: 100vh;
     width: 100vw;
     background-color: rgb(227, 227, 227);
-
+            display: flex;
 }
 
 
@@ -22,7 +22,8 @@ header h1 {
 }
 
 main{
-    
+            height: 10%;
+            width: 100%;   
     margin: 0 10rem 0 10rem;
 
 }
@@ -393,8 +394,8 @@ ul {
 footer {  
  
 background-color: #111;
-height: auto;
-width: 100vw;
+height: 10%;
+width: 100%;
 font-family: "Open Sans";
 padding-top: 20px;
 color: #fff;
