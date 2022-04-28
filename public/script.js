@@ -11,16 +11,19 @@ function rmb(id){
     let button = b.innerText
     let t = 't' + id.substr(1)
     let text = document.getElementById(t) 
+    let l = 'l' + id.substr(1)
+    let card = document.getElementById(l) 
 console.log(text)
 
     if (button === 'Show Info'){
       b.innerText = 'Read Less';
       text.style.display = 'flex'
+      card.style.height = "auto";
     }else{
       b.innerText = 'Show Info';
       text.style.display = 'none'
+      card.style.height = "352px";
     }
-
 
 
 }
