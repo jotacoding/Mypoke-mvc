@@ -106,7 +106,10 @@ section#cards div.card p{
         margin: 3rem;
     
     }
-    
+    section#cards div.card{
+    height: 20rem;
+    width: 20rem;    
+}
 }
 
 
@@ -252,7 +255,9 @@ section#cadastro form button:hover{
 justify-content: space-between;
     margin-right: 3rem;
 }
-   
+   section#cadastro form button{
+   margin-left: 3rem;
+    }
 }
 
 
