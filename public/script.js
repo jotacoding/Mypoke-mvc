@@ -22,7 +22,7 @@ console.log(text)
     }else{
       b.innerText = 'Show Info';
       text.style.display = 'none'
-      card.style.height = "480px";
+      card.style.height = "430px";
     }
 
 
