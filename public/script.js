@@ -18,11 +18,11 @@ console.log(text)
     if (button === 'Show Info'){
       b.innerText = 'Read Less';
       text.style.display = 'flex'
-      card.style.height = "352px";
+      card.style.height = "auto";
     }else{
       b.innerText = 'Show Info';
       text.style.display = 'none'
-      card.style.height = "352px";
+      card.style.height = "480px";
     }
 
 
