@@ -246,6 +246,11 @@ section#cadastro form button:hover{
     width: 10rem;
 
    }
+    section#cadastro form{
+
+    width: 30%
+
+}
    
 }
 
