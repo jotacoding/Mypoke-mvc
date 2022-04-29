@@ -86,6 +86,8 @@ section#cards div.card p{
 @media screen and (max-width: 600px) {
     main.mainCards {
         flex-direction: column;
+        height: 100%;
+   
     }
 
     main.mainCards section.secCard {
@@ -178,7 +180,7 @@ section#cadastro h2{
 
 section#cadastro form{
 
-    width: 50%;
+    width: 100%;
 
 }
 
