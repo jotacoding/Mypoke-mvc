@@ -180,13 +180,13 @@ section#cadastro h2{
 
 section#cadastro form{
 
-    width: 100%;
+    width: 50%
 
 }
 
 section#cadastro form input{
     border-radius: 20px;
-    width: 50%;
+    width: 100%;
     padding: .7rem;
     font-size: 1rem;
     outline: none;
@@ -246,10 +246,7 @@ section#cadastro form button:hover{
     width: 10rem;
 
    }
-    section#cadastro form input{
-    width: 50%;
-    
-}
+   
 }
 
 
