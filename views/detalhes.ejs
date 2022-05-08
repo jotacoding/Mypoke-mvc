@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1657/1657088.png">
+    <title>Detalhes</title>
+</head>
+<body>
+        <%- include('./partials/header.ejs') %>
+    
+        <main>
+            
+            <section id="card">
+
+                <iframe id="card_iframe" <%= filmesDetalhes.iframe %>> </iframe>
+                
+                
+                <table class="tableSinopse">
+
+                    <thead>
+                        <th class="thSinopse" colspan="2"><i class="fa-solid fa-circle-info"></i>  Sinopse </th>
+                    </thead>
+                    <tbody>
+                       
+                        <tr>
+                            <td> <%= filmesDetalhes.sinopse %> </td>
+                        </tr>
+                    </tbody>    
+
+                </table>
+                
+                
+                
+                <table>
+                    <thead>
+                        <th class="thDetalhes" colspan="2">  Detalhes </th>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td><i class="fa-solid fa-head-side-cough"></i> Diretor: </td>
+                            <td> <%= filmesDetalhes.diretor %> </td>
+                        </tr>
+                        
+                        <tr>
+                            <td><i class="fa-solid fa-clock"></i> Duração: </td>
+                            <td> <%= filmesDetalhes.duracao %> Minutos </td>
+                        </tr>    
+                            
+                            <tr>
+                                <td><i class="fa-solid fa-calendar-days"></i> Data de Lançamento: </td>
+                                <td> <%= filmesDetalhes.ano %> </td>
+                            </tr>
+                            
+                            <tr>
+                                <td><i class="fa-solid fa-film"></i> Gênero: </td>
+                                <td> <%= filmesDetalhes.genero %> </td>
+                            </tr>
+
+                            <tr>
+                                <td><i class="fa-solid fa-star"></i> Nota dos Críticos: </td>
+                                <td> <%= filmesDetalhes.nota %> </td>
+                            </tr>
+
+                            <tr>
+                                <td><i class="fa-solid fa-play"></i> Plataforma Disponível: </td>
+                                <td> <%= filmesDetalhes.assista %> </td>
+                            </tr>
+                        
+                    </tbody>
+
+                    <tfoot>
+
+                    </tfoot>
+                
+                </table>
+            
+                
+
+            </section>
+        </main>
+    
+
+        <%- include('./partials/footer.ejs') %>
+
+        <script src="/script.js"></script>
+</body>
+</html>

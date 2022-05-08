@@ -4,21 +4,34 @@
     margin: 0;
     padding: 0;
     font-family: Roboto, arial;
+box-sizing: border-box;}
+
+main{
+    
+  /* margin: 0 10rem 0 10rem; */
+
+  max-width: 100%;
+  
 }
+
+@font-face {
+  font-family:'Hollywood';
+    src: url('/fonts/SF\ Hollywood\ Hills.ttf');
+}
+
 
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(227, 227, 227);
     justify-content: space-between;
     height: 100vh;
-}
+    width: 100vw;
+    background-image: linear-gradient(to bottom right,  #222222,  #161518);
+    }
 
-header{
-    width: 100%;
 
-}
+
 
 header h1 {
     
@@ -27,240 +40,10 @@ header h1 {
     text-align: center;
 }
 
-main{
-    
-    margin: 0 10rem 0 10rem;
-    
-}
-
-
-/*C A R D S*/
-section#cards{
-    
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 5rem;
-    column-gap: 2rem;
-    margin-block-end: 5rem;
-    
-}
-
-section#cards div.card{
-    background-color: #fcfcfc;
-    border-radius: 20px;
-    width: 20rem;
-    box-shadow: 10px 5px 5px 5px #00000015;
-    padding: 1rem;
-    margin-top: 5rem;
-    height: 480px;
-}
-
-section#cards div.card img{
-
-    height: 10rem;
-    width: 10rem;
-    margin-left: 5rem;
-
-}
-
-section#cards div.card h2{
-
-    margin-bottom: 1rem;
-
-}
-
-section#cards div.card p.desc{
-
-    margin-bottom: 1rem;
-
-}
-
-section#cards div.card p{
-    margin-bottom: 0.3rem;
-
-}
-
-
-
-@media screen and (max-width: 600px) {
-    main.mainCards {
-        flex-direction: column;
-        
-        
-    }
-
-    main.mainCards section.secCard {
-        margin-left: 0;
-        margin-bottom: 32px;
-    }
-
-    main.mainCards section.secCard:last-child {
-        margin-bottom: 0;
-    }
-
-    section#cards div.card img{
-
-        height: 15rem;
-        width: 15rem;
-        margin: 3rem;
-    
-    }
-    section#cards div.card{
-    
-   
-    height: 480px;
-}
- 
-}
 
 
 
 
-
-/*B O T A O  S H O W  I N F O*/
-
-.moreText {
-
-display: none;
-flex-direction: column;
-}
-
-.readmorebtn {
-    width: 7rem;
-    margin: 0 auto;
-    font-size: 1rem;
-    background-color: red;
-    border: solid 1px black;
-    color: #fff;
-    cursor: pointer;
-    transition: all .2s ease-in-out;
-    margin-bottom: 2rem;
-    border-radius: 30px 10px;
-}
-.readmorebtn:hover{
-
-    background-color: rgb(170, 25, 0) ;
-    color: whitesmoke;
-}    
-
-
-
-.update {
-    width: 5rem;
-    margin: 0 auto;
-    font-size: 1rem;
-    background-color: rgb(20, 44, 202);
-    border: solid 1px black;
-    color: #fff;
-    cursor: pointer;
-    transition: all .2s ease-in-out;
-    margin-bottom: 2rem;
-    border-radius: 30px 10px;
-}
-.update:hover{
-
-    background-color: rgb(12, 29, 141) ;
-    color: whitesmoke;
-}    
-
-
-/*C A D A S T R O*/
-
-section#cadastro {
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 5rem;
-}
-
-
-section#cadastro h2{
-
-    padding-bottom: 2rem;
-    width: 100%;
-    text-align: center;
-}
-
-section#cadastro form{
-
-    width: 50%
-
-}
-
-section#cadastro form input{
-    border-radius: 20px;
-    width: 100%;
-    padding: .7rem;
-    font-size: 1rem;
-    outline: none;
-    border: solid 2px rgb(197, 197, 197);
-    margin: 0 1rem 1rem 1rem;
-}
-
-section#cadastro form label {
-
-    margin: 1rem;
-    color: rgb(118, 118, 118);
-}
-
-section#cadastro form button{
-
-    padding: .6rem;
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    font-size: 1rem;
-    background-color: red;
-    border: solid 1px black;
-    color: #fff;
-    cursor: pointer;
-    transition: all .2s ease-in-out;
-    border-radius: 20px;
-}
-
-section#cadastro form button:hover{
-
-    background-color: rgb(170, 25, 0) ;
-    color: whitesmoke;
-}    
-
-.ipoke{
-    height: 15rem;
-    width: 15rem;
-
-   }
-
-@media screen and (max-width: 650px) {
-    section#cadastro form button{
-        width: 4.3rem;
-        justify-content: center;
-        
-    }
-
-    section#cadastro form{
-
-        width: 40rem;
-    
-    }
-
-   .ipoke{
-    height: 10rem;
-    width: 10rem;
-
-   }
-    section#cadastro form{
-
-    width: 100%;
-justify-content: space-between;
-    margin-right: 3rem;
-}
-   section#cadastro form button{
-   margin-left: 3rem;
-    }
-}
 
 
 
@@ -269,7 +52,7 @@ justify-content: space-between;
 header {
     margin: 0px;
     padding: 0px;
-
+    width: 100%;
 }
 
 ul {
@@ -288,11 +71,45 @@ ul {
   }
   
   #logo {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: bold;
-    color: #fff
+    color: #e1e1e1;
+    font-family: 'Hollywood';
+    /*-webkit-box-reflect: below 1px linear-gradient(transparent, #0008);*/
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 15s linear infinite;
   }
   
+  @keyframes animate {
+    0%,18%,20%,50.1%,60%,65%,65.1%,80%,90.1%,92%
+    {
+        color: rgb(117, 117, 117);
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%, 100%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px #ffffff,
+        0 0 20px #ffffff,
+        0 0 40px #ffffff,
+        0 0 80px #ffffff,
+        0 0 160px #ffffff,
+        
+    }
+
+  }
+
+  .subH{
+    
+    height: 50px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff
+  }
+
   #header {
     box-sizing: border-box;
     height: 95px;
@@ -300,7 +117,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #b80003;
+    background-image: linear-gradient(to bottom right,  #1a1a1a,  #161234);
+    width: 100%;
   }
   
   #menu {
@@ -320,44 +138,54 @@ ul {
     color: #fff;
   }
   
-  nav.lgpoke {
-    padding: 0rem;
-    
+  
+    img {
+      width: 128px;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      
     }
-    nav.lgpoke img {
-      width: 4rem;
+    nav.lggoat ul.ulgoat {
+      list-style: none;
+      display: flex;
+      align-items: center;
     }
-    nav.lgpoke ul.ulpoke {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    }
-
+    li {
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      }
 
   @media (max-width: 600px) {
     #menu {
       display: block;
       position: absolute;
       width: 100%;
-      top: 70px;
+      top: 95px;
       right: 0px;
-      background: #850002;
+      background: #0b0819;
       transition: 0.6s;
       z-index: 1000;
       height: 0px;
       visibility: hidden;
       overflow-y: hidden;
       
+      
     }
     #nav.active #menu {
       height: calc(100vh - 70px);
       visibility: visible;
       overflow-y: auto;
+      
     }
     #menu a {
       padding: 1rem 0;
       margin: 0 1rem;
       border-bottom: 2px solid ;
+      
     }
     #btn-mobile {
       display: flex;
@@ -395,6 +223,27 @@ ul {
       transform: rotate(-135deg);
       top: -7px;
     }
+    img {
+      width: 80px;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      
+    }
+
+    #logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff;
+      font-family: 'Hollywood';
+    }
+
+    #menu i {
+    display: none;
+    padding: 0;
+    
+  }
+
   }
 
 
@@ -411,7 +260,7 @@ ul {
 footer {
 
 bottom: 0;
-background-color: #111;
+background-image: linear-gradient(to bottom right,  #0a0a0a,  #090716);
 height: auto;
 width: 100vw;
 font-family: "Open Sans";
@@ -476,182 +325,322 @@ color: #fff;
 
 .socials a:hover i{
 
-    color: red;
+    color: #010895;
+    
     
 }
 
 
-
-/*CARD DETALHES*/
-
-main{
-
-    margin: 0 10rem 0 10rem;
-
-}
-
-section#cardDs{
-
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 5rem;
-    column-gap: 2rem;
-    margin-block-end: 5rem;
+/*cards*/
+/*
+section#card_container{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 20px;
+padding: 16px;
+gap: 16px;
 
 }
 
-section#carDs div.cardD{
-    background-color: #fcfcfc;
-    border-radius: 20px;
-    width: 20rem;
-    box-shadow: 10px 5px 5px 5px #00000015;
-    padding: 1rem;
-    margin-top: 5rem;
+section article.cards {
+  height: 250px;
+  width: 200px;
+  background-color: #161234;
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+
+article.cards div.card_img{
+  display: flex;
+  justify-content: center;
+  height: 90%;
+  
+}
+
+article.cards div.card_nome{
+  height: 100%;
+
+}
+
+article.cards div.card_nome{
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  height: 10%;
+
+}
+
+  
+  */
+
+
+
+
+
+
+
+.card_img{
+width: 100%;
+object-fit: contain;
+max-height: 180px;
+margin-right: 10px;
+transition: transform 450ms;
+
+}
+
+
+section#row_posters{
+  display: flex;
+  gap: var(--size-3);
+  grid-auto-flow: column;
+  grid-auto-columns: 6%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  overscroll-behavior-inline: contain;
+  max-width: 56rem;
+  
+  }
+
+
+
+.card_img:hover{
+transform: scale(1.08);
+
+}
+
+
+h1{
+  color: #fff;
+  
+  }
     
-}
 
-section.secDetalhes div.cardD img{
-    padding-left: 7rem;
-    height: 20rem;
-    width: 20rem;
+  article.cards div.card_nome{
+    position: relative;
+    color: #fff;
     
-}
+  
+  }
 
-section#carDs div.cardD h2{
+  
 
-    margin-bottom: 1rem;
+@media (max-width: 600px) {
 
-}
 
-section#carDs div.cardD p.desc{
-
-    margin-bottom: 1rem;
-
-}
-
-section#carDs div.cardD p{
-    margin-bottom: 0.3rem;
-
-}
-
-.evol:first-letter {
-    text-transform: uppercase;
-}
-.alldet:first-letter {
-    text-transform: uppercase;
-}
-
-@media screen and (max-width: 600px) {
-    
-    main.mainDetalhes section.secDetalhes {
-        margin-left: 0;
-        margin-bottom: 32px;
+  section#row_posters{
+   max-width: 20rem;
     }
 
-    section.secDetalhes div.cardD img{
-        padding: 0rem;
-        height: 10rem;
-        width: 10rem;
-    
-    }
-    
     
 }
 
 
 
 
-
-
-
-/*ALL DET*/
-
-section#alldets{
-
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 5rem;
-    column-gap: 2rem;
-    margin-block-end: 5rem;
+/*DETALHES*/
+table{
+width: 100%;
+text-align: center;
+color: #fff;
 
 }
 
-section#alldets div.alldet{
-    background-color: #fcfcfc;
-    border-radius: 20px;
-    width: 20rem;
-    box-shadow: 10px 5px 5px 5px #00000015;
-    padding: 1rem;
-    margin-top: 5rem;
-    
-}
-
-section#alldets div.alldet img{
-
-    height: 10rem;
-    width: 10rem;
-    margin-left: 4rem;
+table tr:nth-child(odd) {
+background-color:  #161234;
 
 }
 
-section#alldets div.alldet h2{
+table th {
+  background-color:  #1e1848;
+}
 
-    margin-bottom: 1rem;
+table tr:nth-child(even){
+background-color:  #161234;
 
 }
 
+iframe#card_iframe{
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  padding-top: 1rem;
+  
+}
 
-section#alldets div.alldet p{
-    margin-bottom: 0.3rem;
-    
+
+.tableSinopse{
+  max-width: 100%;
+  height: 50%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 
 
-@media screen and (max-width: 600px) {
-    main.mainAcards {
-        flex-direction: column;
-    }
 
-    main.mainAcards section.secAcard {
-        margin-left: 0;
-        margin-bottom: 32px;
-    }
 
-    main.mainAcards section.secAcard:last-child {
-        margin-bottom: 0;
-    }
+  
+  /*C A D A S T R O*/
 
-    section#alldets div.alldet img{
+section#cadastro {
 
-        height: 10rem;
-        width: 10rem;
-        margin-left: 2rem;
-    
-    }
-    
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5rem;
+}
+
+
+section#cadastro h2{
+  color: #fff;
+  padding-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+section#cadastro form{
+
+  width: 50%
+
+}
+
+section#cadastro form input{
+  border-radius: 20px;
+  width: 100%;
+  padding: .7rem;
+  font-size: 1rem;
+  outline: none;
+  border: solid 2px rgb(197, 197, 197);
+  margin: 0 1rem 1rem 1rem;
+}
+
+section#cadastro form label {
+
+  margin: 1rem;
+  color: rgb(118, 118, 118);
+}
+
+section#cadastro form button{
+
+  padding: .6rem;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 1rem;
+  background-color: rgb(21, 23, 62);
+  border: solid 1px black;
+  color: #fff;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  border-radius: 20px;
+}
+
+section#cadastro form button:hover{
+
+  background-color: rgb(20, 37, 121) ;
+  color: whitesmoke;
+}    
+
+.ipoke{
+  height: 15rem;
+  width: 15rem;
+
+ }
+
+@media screen and (max-width: 650px) {
+  section#cadastro form button{
+      width: 4.3rem;
+      justify-content: center;
+      
+  }
+
+  section#cadastro form{
+
+      width: 40rem;
+  
+  }
+
+ .ipoke{
+  height: 10rem;
+  width: 10rem;
+
+ }
+  section#cadastro form{
+
+  width: 100%;
+justify-content: space-between;
+  margin-right: 3rem;
+}
+ section#cadastro form button{
+ margin-left: 3rem;
+  }
 }
 
 
 
-/*BOTÃO DETAILS*/
 
-.detalhes {
-    width: 7rem;
-    margin: 0 auto;
-    font-size: 1rem;
-    background-color: gray;
-    border: solid 1px black;
+section#card {
+  max-width: 100%;
+}
+
+thead {
+  max-width: 100%;
+}
+
+tbody {
+  max-width: 100%;
+}
+
+tfoot {
+  max-width: 100%;
+}
+
+
+
+section#card_posters {
+  height: 98%;
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+  gap: 2%;
+  padding: 0% 1%;
+}
+
+.btn_container{
+color: pink;
+
+}
+.delete{
+  
+  background-color: rgb(120, 0, 0);
+  border: solid 1px black;
     color: #fff;
     cursor: pointer;
     transition: all .2s ease-in-out;
     margin-bottom: 2rem;
     border-radius: 30px 10px;
+    font-size: 0.5rem;
+    width: 4rem;
 }
-.detalhes:hover{
 
-    background-color: rgb(61, 61, 61) ;
-    color: whitesmoke;
-}    
+.editar{
+ 
+  background-color: rgb(4, 0, 113);
+  border: solid 1px black;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-bottom: 2rem;
+    border-radius: 30px 10px;
+    font-size: 0.5rem;
+    width: 4rem;
+      
+    
+}
